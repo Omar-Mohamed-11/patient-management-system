@@ -3,6 +3,7 @@
 // Free Palestine
 #include <bits/stdc++.h>
 #include "Patient.h"
+#include "Doctor.h"
 #include "PatientQueue.h"
 using namespace std;
 
@@ -22,6 +23,7 @@ void debug() { cout << "[DEBUG]" << nl; }
 
 signed main()
 {
+  
 
     return 0;
 }
