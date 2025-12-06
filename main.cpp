@@ -2,6 +2,7 @@
 // "وَأَنْ لَيْسَ لِلْإِنسَانِ إِلَّا مَا سَعَىٰ"
 // Free Palestine
 #include <bits/stdc++.h>
+#include "Patient.h"
 using namespace std;
 
 #define int long long
