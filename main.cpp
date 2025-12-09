@@ -24,11 +24,13 @@ using namespace std;
 #define pi acos(-1.0)
 void debug() { cout << "[DEBUG]" << nl; }
 
+// g++ *.cpp -o app -> use this to compile and link all cpp files
+// ./app  -> use this to run your the project
+
 signed main()
 {
     HospitalSystem myHospital; // Now the computer knows what this is!
     myHospital.run();
-  
 
     return 0;
 }
