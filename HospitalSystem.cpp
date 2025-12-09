@@ -28,7 +28,7 @@ HospitalSystem::~HospitalSystem() // save memory leak
 
 // void HospitalSystem::addPatient()
 // {
-//     cout << "\n=== REGISTER NEW PATIENT ===" << endl;
+    // cout << "\n=== REGISTER NEW PATIENT ===" << endl;
 
 //     int id;
 //     cout << "Enter ID: ";

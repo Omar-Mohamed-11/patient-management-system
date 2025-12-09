@@ -12,6 +12,9 @@ using namespace std;
 
 class Doctor : public Person
 {
+    // don't touch this part i will  complete it (Omar Adel)
+    int yearsOfexperinece;
+    double sallary;  
 public:
     // Empty Constructor
     Doctor() : Person() {}

@@ -18,10 +18,7 @@ class HospitalSystem
 {
 private:
     map<CaseType, DoctorList *> doctorsByMajor;
-    PatientQueue patientQueue;
-    map<int, Person> validateId; // this to validate id to check if this id is found or not
-    map<int, Doctor> doctors;    // to store all doctors in one place and it map data structure to make it easy to erase and search without looping
-    map<int, Patient> patients;  // to store all doctors in one place and it map data structure to make it easy to erase and search without looping
+    map<int, Person> validateId; // this map to validate id to check if this id is found or not
 
 public:
     HospitalSystem();
@@ -46,11 +43,11 @@ public:
     void patientManagement();
     void doctorManagement();
     void printExitScreen();
-    // void treatPatient();
-    // void patientsCount();
-    // void doctorsCount();
-    // void displayPatients();
-    // void displayDoctors();
+    // void treatPatient();              // dequeue patient from each queue
+    // void patientsCount();            // we will iterate on majors  
+    // void doctorsCount();             // we will iterate on majors and LinkedList
+    // void displayPatients();          // here we will display id , name, Major, Doctor
+    // void displayDoctors();           // here we will display id , name only
 };
 
 #endif
