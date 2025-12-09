@@ -189,17 +189,17 @@ HospitalSystem::~HospitalSystem() // save memory leak
 //     list->treatPatient(docId);
 // }
 
-// // ================= PATIENT MANAGEMENT =================
-// void HospitalSystem::registerPatient() {}
-// void HospitalSystem::deletePatient() {}
-// void HospitalSystem::searchPatientByID() {}
+// ================= PATIENT MANAGEMENT =================
+void HospitalSystem::registerPatient() {}
+void HospitalSystem::deletePatient() {}
+void HospitalSystem::searchPatientByID() {}
 
-// // ================= DOCTOR MANAGEMENT =================
-// void HospitalSystem::hireDoctor() {}
-// void HospitalSystem::fireDoctor() {}
-// void HospitalSystem::searchDoctorByID() {}
-// void HospitalSystem::searchDoctorByDepartment() {}
-// void HospitalSystem::showDoctorQueue() {}
+// ================= DOCTOR MANAGEMENT =================
+void HospitalSystem::hireDoctor() {}
+void HospitalSystem::fireDoctor() {}
+void HospitalSystem::searchDoctorByID() {}
+void HospitalSystem::searchDoctorByDepartment() {}
+void HospitalSystem::showDoctorQueue() {}
 
 // ================= MAIN MENU & PATIENT MENU & DOCTOR MENU & closing =================
 
