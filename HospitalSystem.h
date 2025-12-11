@@ -30,7 +30,7 @@ public:
     // --- Patient Management ---
     void registerPatient();   // done
     void deletePatient();     // sanad
-    void searchPatientByID(); // moza
+    void searchPatientByID(); // done
 
     // --- Doctor Management ---
     void hireDoctor();               // under work

@@ -165,8 +165,39 @@ void HospitalSystem::registerPatient()
 
     cout << "+==================================================+\n";
 }
-void HospitalSystem::deletePatient() {}     // sanad
-void HospitalSystem::searchPatientByID() {} // moza
+void HospitalSystem::deletePatient() {} // sanad
+void HospitalSystem::searchPatientByID()
+{
+    cout << "\n";
+    cout << "+==================================================+\n";
+    cout << "|              SEARCH PATIENT BY ID                |\n";
+    cout << "+==================================================+\n";
+
+    cout << "Enter Patient ID to search: ";
+    int id = safe_input_int(1, INT_MAX);
+
+    // Check if patient exists in the system
+    if (validateId.count(id) == 0)
+    {
+        cout << "\nPatient with ID " << id << " not found in the system.\n";
+        cout << "+==================================================+\n";
+        return;
+    }
+
+    // Get person from validateId map
+    Person person = validateId[id];
+
+    // Display patient information
+    cout << "\n+==================================================+\n";
+    cout << "|               PATIENT INFORMATION                 |\n";
+    cout << "+==================================================+\n";
+    cout << "Patient ID    : " << id << "\n";
+    cout << "Name          : " << person.getName() << "\n";
+    cout << "Age           : " << person.getAge() << "\n";
+    cout << "Case Type     : " << caseTypeTostring(person.getCaseType()) << "\n";
+
+    cout << "\n+==================================================+\n";
+}
 
 // ================= DOCTOR MANAGEMENT =================
 void HospitalSystem::hireDoctor() {}
@@ -362,7 +393,7 @@ void HospitalSystem::doctorsCount()
     cout << "+==================================================+\n";
 }
 
-void HospitalSystem::treatPatient(){}
+void HospitalSystem::treatPatient() {}
 // ================= MAIN MENU & PATIENT MENU & DOCTOR MENU & closing =================
 
 void HospitalSystem::printMainMenu() // welcome menu
